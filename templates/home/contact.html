@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+contact
+{% endblock title %}
+
+{% block contactactive %}
+active
+{% endblock contactactive %}
+
+{% block body %}
+<div class="container col-1 my-3">
+    <p class="font-weight-bolder" style="color:red;">Got a question? </p>
+</div>
+<div class="container col-1 my-3">
+    <h2 class="font-weight-bolder" style="color:black;">Contact</h2>
+    <h2 class="font-weight-bolder" style="color:black;">MoviesHub</h2>
+</div>
+<h2>
+    <div class="container col-sm-5 my-3 border border-primary p-3">
+        <form method='post'>{% csrf_token %}
+            <div class="form-group">
+                {{form.as_p}}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    {% endblock body %}

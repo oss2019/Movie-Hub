@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Search Results
+{% endblock title %}
+
+{% block body %}
+<div class="container my-3">
+    <h2 class="mt-0 p-1">Search Result:</h2>
+    {% if info|length < 1 %}
+    <h3 style="text-align: center;">No Result found</h3>
+    <h5 style="text-align: center;">Try a different keyword</h5>
+    {% endif %}
+    {% for i in info  %}
+    <div class="media border border-primary p-3">
+        <img src="{{i.image.url}}" class="mr-3" style="width: 200px;">
+        <div class="media-body">
+            <h4 class="mt-0"><a href="{% url 'movieinfo' item_id=i.id %}" style="text-decoration: none;">{{i.name}}</a></h4>
+            <h5 class="mt-0">{{i.relyear}}</h5>
+            {% for j in i.category.all  %}
+            <h5 class="mt-0">{{j}}</h5>
+            {% endfor %}
+            <br><br><br>
+            <table>
+                <tr>
+                    <td>
+                        <h5 class="mt-0 p-2">{{i.ratings}}*</h5>
+                    </td>
+                    <td>
+                        <h5 class="mt-0 p-2">${{i.price}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endblock body %}

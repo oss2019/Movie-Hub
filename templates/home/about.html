@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About
+{% endblock title %}
+
+{% block aboutactive %}
+active
+{% endblock aboutactive %}
+
+{% block body %}
+
+<div class="container">
+    <div class="text-center my-3">
+        <h1 style="color:orange">MOVIES HUB</h1>
+        <h3 style="color:pink"><i>ALL time Movies at one place</i></h3>
+    </div>
+    <div class="container my-5">
+
+        <p class="font-weight-bolder">
+            We love movies! MoviesHub was created for people like us who want to watch "Great Movies."
+            MoviesHub has full-length movies that will make you laugh, make you cry, scare the heck out of you, or
+            inspire you to hug the person you love.
+            We have compelling documentaries, foreign films, unique original web series, and a place that showcases the
+            brightest film makers of tomorrow.
+            We built MoviesHub to be the most user friendly movie destination on the web. No movie is more than two
+            clicks away and they are at reasonable Price.
+        </p>
+        <p class="font-weight-bolder">
+            We at MoviesHub want to thank our "parent" Screen Media Ventures, LLC for giving us a home and an endless
+            flow of great films.
+            Screen Media Ventures, LLC, founded in 1999, is the largest independent distributor of motion pictures to
+            the world wide television market.
+            The company is one of the leading motion picture distributors of theatrical, home video, digital and
+            television both in the U.S. and internationally.
+            With over 1500 movies, Screen Media has one of the largest independently owned film libraries in the motion
+            picture industry.
+        </p>
+            <p class="font-weight-bolder">
+                To keep up with all of the exciting things happening at MoviesHub, follow us on Facebook, Twitter, or on
+                the MoviesHub blog.To know more about our terms and privacy policy <a href="{% url 'info' %}" style="text-decoration:none">click here</a>
+            </p>
+
+    </div>
+</div>
+
+{% endblock body %}
