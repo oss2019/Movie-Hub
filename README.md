@@ -7,8 +7,9 @@ This website is replication of Google Play Movies.
 <ol><li> Django 3.0.6 and Python 3.8.2 </li></ol>
 
 <h3>Running the application: </h3>
-Install Django 3.0.6 and run <br>
-python manage.py runserver on terminal<br>
+Follow the given links to run the applications <br>
+https://stackoverflow.com/questions/37094032/how-to-run-cloned-django-project<br>
+https://alicecampkin.medium.com/setting-up-a-forked-django-project-53d5939b7e9e<br>
 
 <h2>About the website</h2>
 <ul>
@@ -27,13 +28,6 @@ About us: An introductory page that contains information about the website.
 </li>
 <li>
 Contact:Page that contains a form where you can send your message or feedback.
-</li>
-<li>
-The database used is <b>db.sqlite3</b> which is django's default database. The database contains all models used in this website like movie,contact and so on.
-The data stored in databsse can be easily managed by logging in the admin page(http://127.0.0.1:8000/admin/login/?next=/admin/) whose username and password is:<br>
-username:abcd
-  <br>
-password:12345
 </li>
 </ul>
 
