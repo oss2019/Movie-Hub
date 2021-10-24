@@ -27,137 +27,37 @@ active
         border-radius: 30px;
         color: red;
     }
-    .movie-items .movie-item {
-      position: relative;
-      margin-right: 30px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
+    body {
+      background: #2a2e32;
     }
-    @media (max-width: 767px) {
-      .movie-items .movie-item {
-        display: inherit;
-        margin-right: 0px;
-      }
+
+    .text-small {
+      font-size: 0.9rem;
     }
-    .movie-items .movie-item .mv-img {
-      position: relative;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
     }
-    .movie-items .movie-item .mv-img:after {
-      box-shadow: inset -5px -50px 100px -15px #000000;
-      -webkit-box-shadow: inset -5px -50px 100px -15px #000000;
-      -moz-box-shadow: inset -5px -50px 100px -15px #000000;
-      -o-box-shadow: inset -5px -50px 100px -15px #000000;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      content: "";
+
+    a:hover, a:focus {
+      text-decoration: none;
     }
-    .movie-items .movie-item img {
-      width: 100%;
-      -webkit-transition: all 0.5s ease-out;
-      -moz-transition: all 0.5s ease-out;
-      -o-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out;
+
+    .form-control {
+      background: #212529;
+      border-color: #545454;
     }
-    .movie-items .movie-item .title-in {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-left: 30px;
-      margin-bottom: 20px;
-      bottom: 0;
-      left: 0;
-      position: absolute;
+
+    .form-control:focus {
+      background: #212529;
     }
-    @media (max-width: 767px) {
-      .movie-items .movie-item .title-in {
-        margin-left: 60px;
-      }
+
+    footer {
+      background: #212529;
     }
-    .movie-items .movie-item .title-in h6 a {
-      font-family: 'Dosis', sans-serif;
-      font-size: 14px;
-      color: #ffffff;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .movie-items .movie-item .title-in p {
-      font-size: 12px;
-      color: #ffffff;
-    }
-    .movie-items .movie-item .title-in p i {
-      color: #f5b50a;
-      font-size: 22px;
-    }
-    .movie-items .movie-item .title-in p span {
-      font-weight: 400;
-      font-size: 18px;
-    }
-    .movie-items .movie-item .hvr-inner {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: #dd003f;
-  padding: 8px 15px;
-  width: 110px;
-  height: 38px;
-  text-align: center;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  cursor: pointer;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.movie-items .movie-item .hvr-inner a {
-  font-family: 'Dosis', sans-serif;
-  font-size: 14px;
-  color: #abb7c4;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.movie-items .movie-item .hvr-inner a i {
-  margin-right: 5px;
-}
-.movie-items .movie-item:hover .hvr-inner {
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  filter: alpha(opacity=100);
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.movie-items .movie-item:hover .title-in,
-.movie-items .movie-item:hover img {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  -moz-opacity: 0.25;
-  -khtml-opacity: 0.25;
-  -webkit-opacity: 0.25;
-  opacity: 0.25;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-  filter: alpha(opacity=25);
-}
-.movie-items .movie-item:hover h6 a {
-  color: #dcf836;
-}
+
 </style>
 <section class="section" style="background:black">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -200,72 +100,8 @@ active
       </div>
 </section>
 
+<section>
 
-<div class="container">
-  <div class="bg-light">
-      <div class="container py-5">
-        <div class="row align-items-center py-5"> 
-          <div class="col-lg-6">
-            <h1 class="display-4">MOVIES</h1>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-md-3" style="margin:3%; display:inline; background-color:#000000;">
-            <img src="../../media/pics/knivesout.jpg" class="d-block w-100" />
-            <div class="bottom-left movie-title" style="position: absolute; padding:10%; width:100%; bottom: 0px; left: 0px; color:white; background-color: rgba(0, 0, 0, 0.5);;">
-              <div class="row">
-                <h4>Knives Out (2019)</h4>
-              </div>
-              <div class="row">
-                <h6 class="col-9 align-items-right">Mystery/Crime</h6>
-                <span class="col-3 align-items-right" style="color:#f5b50a">7.9/10</span>
-              </div>
-              <div class="row">
-                <p class="col-9" style="font-size: 0.6rem;">The circumstances surrounding the death of crime novelist Harlan Thrombey are mysterious, but there's one thing that renowned Detective Benoit Blanc knows for sure -- everyone in the wildly dysfunctional Thrombey family is a suspect. Now, Blanc must sift through a web of lies and red herrings to uncover the truth.</p>
-                <h5 class="col-3 align-items-right">₹120</h5>
-              </div>           
-            </div>
-          </div>
-          <div class="col-md-3" style="margin:3%; display:inline; background-color:#000000;">
-            <img src="../../media/pics/Jonny_english.jpg" class="d-block w-100" />
-            <div class="bottom-left movie-title" style="position: absolute; padding:10%; width:100%; bottom: 0px; left: 0px; color:white; background-color: rgba(0, 0, 0, 0.5);;">
-              <div class="row">
-                <h4>Johnny English Strikes Again (2018)</h4>
-              </div>
-              <div class="row">
-                <h6 class="col-9 align-items-right">Comedy/Action</h6>
-                <span class="col-3 align-items-right" style="color:#f5b50a">6.2/10</span>
-              </div>
-              <div class="row">
-                <p class="col-9" style="font-size: 0.6rem;">When a hacker breaks into the government database and exposes the active undercover agents in Britain, Johnny English is hired to catch the culprit.</p>
-                <h5 class="col-3 align-items-right">₹150</h5>
-              </div>           
-            </div>
-          </div>
-            <div class="col-md-3" style="margin:3%; display:inline; background-color:#000000;">
-              <img src="../../media/pics/jumangi.jpg" class="d-block w-100" />
-              <div class="bottom-left movie-title" style="position: absolute; padding:10%; width:100%; bottom: 0px; left: 0px; color:white; background-color: rgba(0, 0, 0, 0.5);;">
-                <div class="row">
-                  <h4>
-                    Jumanji: Welcome to the Jungle (2019)</h4>
-                </div>
-                <div class="row">
-                  <h6 class="col-9 align-items-right">Fantasy/Adventure</h6>
-                  <span class="col-3 align-items-right" style="color:#f5b50a">6.9/10</span>
-                </div>
-                <div class="row">
-                  <p class="col-9" style="font-size: 0.6rem;">Four teenagers are sucked into a magical video game, and the only way they can escape is to work together to finish the game.</p>
-                  <h5 class="col-3 align-items-right">₹120</h5>
-                </div>           
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  
 </section>
 
 <!-- FOOTER -->
