@@ -59,6 +59,8 @@ def logout(request):
     auth.logout(request)
     messages.info(request, 'logged out successfully')
     return redirect('/')
+
+    
 def contact(request):
     if request.method=='POST':
         form=contactform(request.POST)
