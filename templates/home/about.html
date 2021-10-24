@@ -10,8 +10,95 @@ active
 
 {% block body %}
 
+<style type="text/css">
+    .social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+</style>
+
+
 <div class="container">
-    <div class="text-center my-3">
+    <div class="bg-light">
+        <div class="container py-5">
+          <div class="row h-100 align-items-center py-5">
+            <div class="col-lg-6">
+              <h1 class="display-4">MOVIES HUB</h1>
+              <p class="lead text-muted mb-0">ALL time Movies at one place</p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block"><img src="../../media/pics/about1.jpg" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<div class="bg-white py-5">
+    <div class="container py-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+          <h2 class="font-weight-light">Our Vision</h2>
+          <p class="font-italic text-muted mb-4"> We love movies! MoviesHub was created for people like us who want to watch "Great Movies."
+            MoviesHub has full-length movies that will make you laugh, make you cry, scare the heck out of you, or
+            inspire you to hug the person you love.
+            We have compelling documentaries, foreign films, unique original web series, and a place that showcases the
+            brightest film makers of tomorrow.
+            We built MoviesHub to be the most user friendly movie destination on the web. No movie is more than two
+            clicks away and they are at reasonable Price.
+        </p>
+        </div>
+        <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="../../media/pics/mission.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5 px-5 mx-auto"><img src="../../media/pics/values.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+        <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+            <h2 class="font-weight-light">Our Founders</h2>
+            <p class="font-italic text-muted mb-4"> We love movies! MoviesHub was created for people like us who want to watch "Great Movies."
+                We at MoviesHub want to thank our "parent" Screen Media Ventures, LLC for giving us a home and an endless
+                flow of great films.
+                Screen Media Ventures, LLC, founded in 1999, is the largest independent distributor of motion pictures to
+                the world wide television market.
+                The company is one of the leading motion picture distributors of theatrical, home video, digital and
+                television both in the U.S. and internationally.
+                With over 1500 movies, Screen Media has one of the largest independently owned film libraries in the motion
+                picture industry.
+            </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+            <h2 class="font-weight-light">Contact Us</h2>
+            <p class="font-italic text-muted mb-4"> We love movies! MoviesHub was created for people like us who want to watch "Great Movies."
+                To keep up with all of the exciting things happening at MoviesHub, follow us on Facebook, Twitter, or on
+                the MoviesHub blog.To know more about our terms and privacy policy <a href="{% url 'info' %}" style="text-decoration:none">click here</a>
+            </p>
+            <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+        </div>
+        <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="../../media/pics/social.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+        
+    </div>
+    </div>
+  </div>
+    <!-- <div class="text-center my-3">
         <h1 style="color:orange">MOVIES HUB</h1>
         <h3 style="color:pink"><i>ALL time Movies at one place</i></h3>
     </div>
@@ -41,7 +128,7 @@ active
                 the MoviesHub blog.To know more about our terms and privacy policy <a href="{% url 'info' %}" style="text-decoration:none">click here</a>
             </p>
 
-    </div>
+    </div> -->
 </div>
 
 {% endblock body %}
